@@ -1,0 +1,8 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+message utsns_entry {
+	required string nodename	= 1;
+	required string domainname	= 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+enum SysctlType {
+	CTL_STR	= 5;
+	CTL_32	= 6;
+}
+
+message sysctl_entry {
+	required SysctlType type	= 1;
+
+	optional int32 iarg		= 2;
+	optional string sarg		= 3;
+}

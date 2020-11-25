@@ -1,0 +1,9 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+message fifo_entry {
+	required uint32		id		= 1;
+	required uint32		pipe_id		= 2;
+	optional uint32		regf_id		= 3;
+}

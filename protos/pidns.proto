@@ -1,0 +1,7 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+message pidns_entry {
+	optional string ext_key		= 1;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+message macvlan_link_entry {
+	required uint32	mode	= 1;
+	optional uint32 flags	= 2;
+}

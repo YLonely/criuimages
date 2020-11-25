@@ -1,0 +1,8 @@
+syntax = "proto2";
+package types;
+option go_package = "github.com/YLonely/criuimages/types";
+
+message timeval {
+	required uint64		tv_sec	= 1;
+	required uint64		tv_usec	= 2;
+}
