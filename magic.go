@@ -130,7 +130,9 @@ const (
 )
 
 var imageTypes = map[uint32]string{
-	INVENTORY_MAGIC:      "inventory",
+	IMG_COMMON_MAGIC:     ImageTypeNormal,
+	IMG_SERVICE_MAGIC:    ImageTypeAuxiliary,
+	INVENTORY_MAGIC:      ImageTypeInventory,
 	FDINFO_MAGIC:         "fdinfo",
 	REG_FILES_MAGIC:      "reg-files",
 	EVENTFD_FILE_MAGIC:   "eventfd",
@@ -163,4 +165,6 @@ var imageTypes = map[uint32]string{
 	TTY_INFO_MAGIC:       "tty-info",
 	PACKETSK_MAGIC:       "packetsk",
 	NETDEV_MAGIC:         "netdev",
+	STATS_MAGIC:          "stats",
+	IRMAP_CACHE_MAGIC:    "irmap-cache",
 }
