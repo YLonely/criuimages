@@ -167,4 +167,9 @@ var imageTypes = map[uint32]string{
 	NETDEV_MAGIC:         "netdev",
 	STATS_MAGIC:          "stats",
 	IRMAP_CACHE_MAGIC:    "irmap-cache",
+	IPC_VAR_MAGIC:        "ipcns-var",
+	IPCNS_MSG_MAGIC:      "ipcns-msg",
+	IPCNS_SEM_MAGIC:      "ipcns-sem",
+	IPCNS_SHM_MAGIC:      "ipcns-shm",
+	SHMEM_PAGEMAP_MAGIC:  "shm-pagemap",
 }
