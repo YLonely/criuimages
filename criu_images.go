@@ -71,6 +71,11 @@ func (i *Image) Close() error {
 	return i.file.Close()
 }
 
+// File returns the file under the image
+func (i *Image) File() *os.File {
+	return i.file
+}
+
 func (i *Image) checkType() error {
 	data := make([]byte, 4)
 	n, err := i.file.Read(data)
