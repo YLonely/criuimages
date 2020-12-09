@@ -65,7 +65,7 @@ func (i *Image) ReadOne(obj proto.Message) error {
 }
 
 func (i *Image) Close() error {
-	if i.file != nil {
+	if i.file == nil {
 		return nil
 	}
 	return i.file.Close()
